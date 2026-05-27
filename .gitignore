@@ -1,10 +1,5 @@
 node_modules/
-dist/
 .env
-.env.local
-coverage/
-*.log
-
-Scripture Path.html
-
-Scripture Path.html
+dist/
+.DS_Store
+Thumbs.db
