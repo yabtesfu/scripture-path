@@ -284,7 +284,7 @@ export default function Plans({ onTabChange }) {
         <div>
           <div className="font-mono text-[10px] uppercase tracking-[0.24em] text-gold">Currently Active</div>
           <p className="mt-2 font-serif text-2xl italic text-paper">
-            Sermon on the Mount &mdash; Day 18 of 40
+            Sermon on the Mount &mdash; Day {completedCount + 1} of {totalReadings} &mdash; {liveProgress}% complete
           </p>
         </div>
         <button
