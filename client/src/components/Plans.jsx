@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { BookOpen, Calendar, Check, ChevronRight, X } from 'lucide-react';
+import { useProgress } from '../hooks/useProgress.js';
 
 const FILTERS = [
   { id: 'all',           label: 'All Plans'     },
@@ -223,11 +224,17 @@ function PlanModal({ plan, onClose, onStart }) {
 export default function Plans({ onTabChange }) {
   const [activeFilter, setActiveFilter] = useState('all');
   const [selectedPlan, setSelectedPlan] = useState(null);
+  const { progress: liveProgress, completedCount, totalReadings } = useProgress();
 
   function isVisible(plan) {
     if (activeFilter === 'all') return true;
     return plan.cats.includes(activeFilter);
   }
+
+  // Inject live progress into plan 2 (the active Sermon on the Mount plan)
+  const plansWithLiveProgress = PLANS.map(p =>
+    p.id === 2 ? { ...p, progress: liveProgress } : p
+  );
 
   return (
     <>
@@ -261,7 +268,7 @@ export default function Plans({ onTabChange }) {
         </div>
 
         <div className="grid gap-px border border-paper/10 bg-paper/10 sm:grid-cols-2 lg:grid-cols-3">
-          {PLANS.map(plan => (
+          {plansWithLiveProgress.map(plan => (
             <PlanCard
               key={plan.id}
               plan={plan}
