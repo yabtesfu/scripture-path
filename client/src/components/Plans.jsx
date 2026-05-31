@@ -301,7 +301,7 @@ export default function Plans({ onTabChange }) {
         <PlanModal
           plan={selectedPlan}
           onClose={() => setSelectedPlan(null)}
-          onStart={(p) => console.log('Start plan:', p.title)}
+          onStart={() => { setSelectedPlan(null); onTabChange?.('dashboard'); }}
         />
       )}
     </>

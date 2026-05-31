@@ -84,7 +84,7 @@ export default function App() {
         {/* ── Active screen ── */}
         {activeTab === 'dashboard' && <Dashboard />}
         {activeTab === 'plans'     && <Plans onTabChange={setActiveTab} />}
-        {activeTab === 'library'   && <Library />}
+        {activeTab === 'library'   && <Library onTabChange={setActiveTab} />}
         {activeTab === 'journal'   && <Journal />}
 
       </div>

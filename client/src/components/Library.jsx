@@ -143,7 +143,7 @@ function SpineShelf({ books, selectedId, onSelect }) {
   );
 }
 
-export default function Library() {
+export default function Library({ onTabChange }) {
   const [selected, setSelected] = useState(BOOKS[5]); // Matthew default
 
   return (
@@ -210,11 +210,17 @@ export default function Library() {
           </blockquote>
 
           <div className="mt-8 flex flex-wrap gap-3">
-            <button className="inline-flex items-center gap-3 border border-gold px-5 py-3 font-sans text-[11px] font-bold uppercase tracking-[0.22em] text-gold transition hover:bg-gold hover:text-ink">
+            <button
+              onClick={() => onTabChange?.('plans')}
+              className="inline-flex items-center gap-3 border border-gold px-5 py-3 font-sans text-[11px] font-bold uppercase tracking-[0.22em] text-gold transition hover:bg-gold hover:text-ink"
+            >
               <BookOpen size={13} />
               Start Reading
             </button>
-            <button className="inline-flex items-center gap-3 border border-paper/20 px-5 py-3 font-sans text-[11px] font-semibold uppercase tracking-[0.22em] text-paper/60 transition hover:border-paper/50 hover:text-paper">
+            <button
+              onClick={() => onTabChange?.('plans')}
+              className="inline-flex items-center gap-3 border border-paper/20 px-5 py-3 font-sans text-[11px] font-semibold uppercase tracking-[0.22em] text-paper/60 transition hover:border-paper/50 hover:text-paper"
+            >
               <ExternalLink size={13} />
               View Chapter List
             </button>
