@@ -4,13 +4,15 @@ import Dashboard from './components/Dashboard.jsx';
 import Plans from './components/Plans.jsx';
 import Library from './components/Library.jsx';
 import Journal from './components/Journal.jsx';
+import Study from './components/Study.jsx';
 import { dashboard } from './data/dashboard.js';
 
 const TABS = [
   { id: 'dashboard', label: 'Today',   num: 'I.'   },
   { id: 'plans',     label: 'Plans',   num: 'II.'  },
   { id: 'library',   label: 'Library', num: 'III.' },
-  { id: 'journal',   label: 'Journal', num: 'IV.'  },
+  { id: 'study',     label: 'Study',   num: 'IV.'  },
+  { id: 'journal',   label: 'Journal', num: 'V.'   },
 ];
 
 function Wordmark() {
@@ -85,6 +87,7 @@ export default function App() {
         {activeTab === 'dashboard' && <Dashboard />}
         {activeTab === 'plans'     && <Plans onTabChange={setActiveTab} />}
         {activeTab === 'library'   && <Library onTabChange={setActiveTab} />}
+        {activeTab === 'study'     && <Study />}
         {activeTab === 'journal'   && <Journal />}
 
       </div>

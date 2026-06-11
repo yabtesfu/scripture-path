@@ -1,0 +1,96 @@
+export const wordStudies = [
+  {
+    id: 'makarios',
+    term: 'Makarios',
+    script: 'makarios',
+    language: 'Greek',
+    gloss: 'Blessed, flourishing, deeply fortunate',
+    passage: 'Matthew 5:3-12',
+    note: 'Jesus uses this word to name a life already touched by the kingdom, even when the visible circumstances look poor, mournful, meek, or costly.',
+    prompt: 'Where do you need to believe blessing before your situation changes?',
+  },
+  {
+    id: 'ptochos',
+    term: 'Ptochos',
+    script: 'ptochos',
+    language: 'Greek',
+    gloss: 'Poor, dependent, empty-handed',
+    passage: 'Matthew 5:3',
+    note: 'The word carries more than modest humility. It pictures dependence, the open-handed posture of someone who knows they cannot secure the kingdom by force.',
+    prompt: 'What would open-handed prayer look like for you today?',
+  },
+  {
+    id: 'shalom',
+    term: 'Shalom',
+    script: 'shalom',
+    language: 'Hebrew / Aramaic family',
+    gloss: 'Peace, wholeness, restored order',
+    passage: 'Matthew 5:9',
+    note: 'Behind the idea of peace is more than the absence of conflict. It is wholeness repaired: people, worship, justice, and ordinary life put back together.',
+    prompt: 'Where are you being invited to make peace rather than merely keep quiet?',
+  },
+  {
+    id: 'abba',
+    term: 'Abba',
+    script: 'abba',
+    language: 'Aramaic',
+    gloss: 'Father',
+    passage: 'Matthew 6:9',
+    note: 'The prayer Jesus teaches begins with nearness before request. The address forms the soul before the petitions do.',
+    prompt: 'How does your prayer change when it begins with trust instead of urgency?',
+  },
+];
+
+export const musicRecommendations = [
+  {
+    id: 'quiet-prayer',
+    mood: 'Quiet Prayer',
+    title: 'Instrumental Psalms',
+    artist: 'Scripture Path Mix',
+    bestFor: 'Matthew 6:5-8',
+    reason: 'Sparse piano and soft strings for secret prayer, examen, and slow rereading.',
+  },
+  {
+    id: 'lament',
+    mood: 'Lament',
+    title: 'Songs for Those Who Mourn',
+    artist: 'Scripture Path Mix',
+    bestFor: 'Matthew 5:4',
+    reason: 'Minor-key worship and contemplative hymns that leave room for grief without rushing it.',
+  },
+  {
+    id: 'kingdom',
+    mood: 'Kingdom Hope',
+    title: 'Blessed Are the Poor',
+    artist: 'Scripture Path Mix',
+    bestFor: 'Matthew 5:3-12',
+    reason: 'Warm folk, choral textures, and simple refrains for carrying the Beatitudes into the day.',
+  },
+];
+
+export const bookRecommendations = [
+  {
+    id: 'cost-discipleship',
+    title: 'The Cost of Discipleship',
+    author: 'Dietrich Bonhoeffer',
+    theme: 'Obedience',
+    pairing: 'Matthew 5-7',
+    note: 'A bracing companion for reading the Sermon as a command to embodied discipleship, not only inspiration.',
+  },
+  {
+    id: 'divine-conspiracy',
+    title: 'The Divine Conspiracy',
+    author: 'Dallas Willard',
+    theme: 'Kingdom life',
+    pairing: 'Matthew 5-7',
+    note: 'Explores the Sermon as practical formation into the life Jesus says is available now.',
+  },
+  {
+    id: 'aramaic-jesus',
+    title: 'Jesus Through Middle Eastern Eyes',
+    author: 'Kenneth E. Bailey',
+    theme: 'Historical context',
+    pairing: 'Gospels',
+    note: 'Helpful cultural background for hearing familiar sayings with first-century texture.',
+  },
+];
